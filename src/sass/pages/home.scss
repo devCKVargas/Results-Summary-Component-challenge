@@ -1,0 +1,106 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/" as *;
+
+@media only screen and (min-width: $breakpoint-md) {
+	.main-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		place-content: center;
+		border-radius: 3rem;
+		margin-block: auto;
+		height: 100vh;
+
+	}
+
+}
+
+.card {
+	background: linear-gradient(180deg, var(--bg-light-slate-blue) 0%, var(--bg-light-royal-blue) 100%);
+	border-radius: 0 0 3rem 3rem;
+	padding: 3.5rem 5rem;
+
+	display: grid;
+	place-items: center;
+
+	@media only screen and (min-width: $breakpoint-md) {
+		border-radius: 3rem;
+
+	}
+
+	&__result-text {
+		margin-bottom: 2rem;
+	}
+
+	&__circle {
+		background: linear-gradient(180deg, var(--circle-violet-blue) 0%, var(--circle-persian-blue) 100%);
+		border-radius: 100rem;
+		padding: 3rem 5rem;
+		text-align: center;
+		width: fit-content;
+		margin-bottom: 2rem;
+	}
+
+	&__secondary-heading {
+		margin-bottom: 1rem;
+	}
+
+}
+
+.summary {
+	--spacing: 3rem;
+	padding: var(--spacing);
+
+	&__tertiary-heading {
+		margin-bottom: var(--spacing);
+	}
+
+	.btn {
+		background: var(--neutral-3);
+
+		&:hover {
+			background: linear-gradient(180deg, var(--bg-light-slate-blue) 0%, var(--bg-light-royal-blue) 100%);
+		}
+	}
+
+}
+
+.category {
+
+	margin-block: 2rem;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 1rem;
+	padding: 1.5rem 2rem;
+
+
+	&__group {
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	&__icons {
+		width: 2.5rem;
+		display: flex;
+		align-items: center;
+	}
+
+	&--reaction {
+		background-color: HSLA(var(--light-red), .1);
+	}
+
+	&--memory {
+		background-color: HSLA(var(--orangey-yellow), .1);
+	}
+
+	&--verbal {
+		background-color: HSLA(var(--green-teal), .1);
+	}
+
+	&--visual {
+		background: HSLA(var(--cobalt-blue), .1);
+	}
+
+}

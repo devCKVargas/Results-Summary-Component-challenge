@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide variables.
+// -----------------------------------------------------------------------------
+
+//! SASS
+// font-family
+
+$ff-main: 'Hanken Grotesk', sans-serif;
+
+// colors
+$clr-white: #fff;
+$clr-black: #000;
+
+// Container's maximum width
+$max-width: 1180px !default;
+
+// breakpoint
+$breakpoint-md: 720px;
+
+//! CSS Variables
+:root {
+	--light-red: 0, 100%, 67%;
+	--orangey-yellow: 39, 100%, 56%;
+	--green-teal: 166, 100%, 37%;
+	--cobalt-blue: 234, 85%, 45%;
+
+	// Gradients;
+	--bg-light-slate-blue: hsl(252, 100%, 67%);
+	--bg-light-royal-blue: hsl(241, 81%, 54%);
+	--circle-violet-blue: hsla(256, 72%, 46%, 1);
+	--circle-persian-blue: hsla(241, 72%, 46%, 0);
+
+	// Neutral;
+	--white: hsl(0, 0%, 100%);
+	--neutral-1: hsl(221, 100%, 96%);
+	--neutral-2: hsl(241, 100%, 89%);
+	--neutral-3: hsl(224, 30%, 27%)
+}
